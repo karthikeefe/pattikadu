@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent implements OnInit {
+  isColapse:boolean=true;
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  colapse() {
+    this.isColapse = !this.isColapse;
+   }
 
 }
